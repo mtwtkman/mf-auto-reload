@@ -1,0 +1,13 @@
+{
+    "name": "mf-auto-reloader",
+    "description": "auto reloader for inancial institution list of moneyforward",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.moneyforward.com/accounts"],
+            "js": ["index.js"]
+        }
+    ]
+}
